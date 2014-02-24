@@ -38,7 +38,7 @@ module Mongoid
     end
 
     def metadata_relation(relation)
-      meta = relation.respond_to?(:metadata) ? relation.metadata : relation.__metdata
+      meta = relation.respond_to?(:metadata) ? relation.metadata : relation.__metadata
       meta.relation
     end
   end
